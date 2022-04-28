@@ -31,7 +31,7 @@ public class CarTest {
 
         Car car3 = new Car();
         car3.make = "Audi";
-        System.out.println(car3.make); // null
+        System.out.println(car3.make); // Audi
         System.out.println(car3.model);// null
         System.out.println(car3.year);//0
         System.out.println(car3.color);// null

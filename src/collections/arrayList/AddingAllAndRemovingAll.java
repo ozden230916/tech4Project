@@ -12,6 +12,7 @@ public class AddingAllAndRemovingAll {
         BMW
         Mercedes
         Volkswagen
+        Audi
 
         Then print the list
 
@@ -95,6 +96,7 @@ public class AddingAllAndRemovingAll {
 
         inventory.removeAll(carsTobeRemoved);
         System.out.println(inventory);
+
 
 
     }

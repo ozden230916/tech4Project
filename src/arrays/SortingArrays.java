@@ -13,6 +13,7 @@ public class SortingArrays {
         System.out.println("My array is = " + Arrays.toString(numbers));
         System.out.println();
 
+
         Arrays.sort(numbers);
         System.out.println("My sorted array is = " + Arrays.toString(numbers));
 
@@ -28,5 +29,6 @@ public class SortingArrays {
         Arrays.sort(names);
 
         System.out.println("My sorted names array = " + Arrays.toString(names));
+
     }
 }

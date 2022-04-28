@@ -7,7 +7,7 @@ public class _05_PracticeSearchingInArray {
         System.out.println("\n--------TASK-1--------\n");
 
         /*
-
+        String[] objects = {"Remote", "Mouse", "Mouse", "Keyboard", "iPad"};
         Check the collection you have above and print true if it contains Mouse
         Print false otherwise
          */

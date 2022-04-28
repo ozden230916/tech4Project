@@ -7,13 +7,14 @@ public class Fruit {
         hasColor = true;
     }
     public String name;
+
+    public String shape;
+    public boolean isSweet;
     {
         shape = "Round";
         isSweet = true;
 
     }
-    public String shape;
-    public boolean isSweet;
 
 
 

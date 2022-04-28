@@ -8,7 +8,7 @@ public class ConvertingListsToEachOther {
         numbers.add(5);
         numbers.add(7);
         numbers.add(9);
-        System.out.println("The ArrayList ia = " + numbers);
+        System.out.println("The ArrayList is = " + numbers);
 
         System.out.println("---Converting ArrayList to a LinkedList");
         List<Integer> numbers2 = new LinkedList<>(numbers);

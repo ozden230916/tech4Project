@@ -8,6 +8,7 @@ public class Triangle {
             for (int j = 1; j <= i ; j++) {
                 System.out.print("A");
             }
+            System.out.println();
 
         }
     }

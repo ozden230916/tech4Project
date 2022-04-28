@@ -1,2 +1,4 @@
-package accessModifiers.package1;public class Tesla {
+package accessModifiers.package1;
+
+final class Tesla {
 }

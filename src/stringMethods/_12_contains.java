@@ -10,6 +10,7 @@ public class _12_contains {
         System.out.println(s.contains(""));
         System.out.println(s.contains("123"));
 
+
         /*
         Ask user to enter an address
         If address contains "chicago" in any way, then print "You are in the club"

@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class _04_PracticePartialArrays {
     public static void main(String[] args) {
         System.out.println("\n--------TASK-1--------");
@@ -68,7 +70,7 @@ public class _04_PracticePartialArrays {
         // 10, -3, -7, 0, 0, 7, 22
 
         RESULT:
-        156
+        154
          */
         int productOfLast4 = 1;
         for (int i = numbers.length - 4; i < numbers.length ; i++) {
@@ -84,6 +86,11 @@ public class _04_PracticePartialArrays {
                 break;
             }
         }
+        System.out.println(hasZero);
+
+        System.out.println("\n--------TASK-6-secondway--------");
+        Arrays.sort(numbers);
+        if (Arrays.binarySearch(numbers, 0) > 0) hasZero = true;
         System.out.println(hasZero);
     }
 }

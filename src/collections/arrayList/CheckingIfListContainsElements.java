@@ -21,7 +21,7 @@ public class CheckingIfListContainsElements {
         false otherwise
 
         RESULT:
-        false
+        true
          */
 
         System.out.println( numbers.contains(5));

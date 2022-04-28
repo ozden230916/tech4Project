@@ -5,7 +5,7 @@ import java.util.*;
 public class ConvertingArrayToList {
     public static void main(String[] args) {
         /*
-        Create a List and store below data - countries1
+        Create a array and store below data - countries1
 
         USA
         Brasilia

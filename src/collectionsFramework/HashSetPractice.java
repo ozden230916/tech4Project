@@ -23,5 +23,6 @@ public class HashSetPractice {
         numbers.add(null);
         System.out.println(numbers);//it will not allow duplicates and more than one null
 
+
     }
 }

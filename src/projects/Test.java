@@ -5,39 +5,36 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Test {
-    public static void main(String[] args) {
-        int[] numbers = {1, 3, 2, 1, 3, 4, 3, 2, 6};
-        int element = 0;
-        int count = 0;
-        List<Integer> withoutDuplicated = new ArrayList<>();
-        for (int i = 0; i < numbers.length; i++) {
-            for (int j = i + 1; j < numbers.length ; j++) {
-                if(!withoutDuplicated.contains(numbers[i])) withoutDuplicated.add(numbers[i]);
-                else if( !withoutDuplicated.contains(numbers[numbers.length - 1])){
-                    withoutDuplicated.add(numbers[numbers.length - 1]);
-                }
+ /*
+•	Write a method that takes a “String password” as an argument and checks if the given password is valid or not
+•	This method will return true if given password is valid, or false if given password is not valid
+•	A VALID PASSWORD:
+	-should have length of 8 to 16 (length of 7 or 17 should return false)
+	-should have at least 1 digit, 1 uppercase, 1 lowercase and 1 special char
+	-should NOT have any space
 
-            }
+
+  */
+    public static boolean isValidPassword(String s){
+        boolean isValid = false;
+        int upper = 0, lower = 0, digit = 0, special = 0;
+        for (int i = 0; i < s.length(); i++) {
+           if(s.length() < 8 || s.length() > 16) isValid = false;
+           else {
+               if (Character.isDigit(s.charAt(i))) digit++;
+               else if (Character.isUpperCase(s.charAt(i))) upper++;
+               else if(Character.isLowerCase(s.charAt(i))) lower ++;
+               else if(!Character.isLetterOrDigit(s.charAt(i)) && !Character.isWhitespace(s.charAt(i))) special++;
+           }
+           if ( digit >= 1 && upper >= 1 && lower >= 1 && special >= 1) isValid = true;
         }
-        for (int i = 0; i < withoutDuplicated.size(); i++) {
-            element = withoutDuplicated.get(i);
-            count = 0;
-            for (int j = 0; j < numbers.length; j++) {
-                if (withoutDuplicated.get(i) == numbers[j]){
-                    count ++;
-
-                }
-
-            }
-            System.out.println(element + " occurs " + count + " times");
-        }
-
-
-
-
-
-
+        return isValid;
     }
+
+    public static void main(String[] args) {
+        System.out.println(isValidPassword("$Ad1234"));
+    }
+
 }
 
 

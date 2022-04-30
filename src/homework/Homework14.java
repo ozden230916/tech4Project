@@ -98,8 +98,6 @@ public class Homework14 {
         String str = "Java is fun";
         String[] strT6 = str.split(" ");
         String reservedWord = "";
-        String word = "";
-
 
 
         for (int i = 0; i < strT6.length; i++) {

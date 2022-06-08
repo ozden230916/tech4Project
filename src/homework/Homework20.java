@@ -45,6 +45,7 @@ public class Homework20 {
     public static String reverseSentence(String s){
         String[] words = s.split(" ");
         if ( words.length < 2) return "There is not enough words";
+
         else{
             words[0] = (words[0].charAt(0) + "").toLowerCase() + words[0].substring(1);
             words[words.length - 1] = (words[words.length - 1].charAt(0) + "").toUpperCase() + words[words.length - 1].substring(1);
@@ -104,6 +105,8 @@ public class Homework20 {
         return listWithoutX;
     }
 
+
+
     public static void main(String[] args) {
         System.out.println("\n--------TASK-1--------");
         System.out.println(hasLowerCase(""));
@@ -161,6 +164,8 @@ public class Homework20 {
         list.add("Xx");
         list.add("ABC");
         System.out.println(noXInVariables(new ArrayList<>(list)));
+
+
 
     }
 }

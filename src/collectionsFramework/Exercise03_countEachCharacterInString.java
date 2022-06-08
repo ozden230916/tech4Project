@@ -21,5 +21,6 @@ public class Exercise03_countEachCharacterInString {
             System.out.println(entry);
         }
 
+
     }
 }

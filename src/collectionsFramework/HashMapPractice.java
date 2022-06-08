@@ -40,6 +40,10 @@ public class HashMapPractice {
         System.out.println(students.size());
         System.out.println(students);
 
+        System.out.println(students.entrySet());
+        System.out.println(students.keySet());
+        System.out.println(students.values());
+
 
     }
 }

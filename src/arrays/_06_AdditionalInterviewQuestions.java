@@ -37,7 +37,7 @@ public class _06_AdditionalInterviewQuestions {
         Find the min value
 
         RESULT :
-        0.5
+        1.5
          */
 
         double[] doubles = {2.5, 9, 10.25, 0.5, 0.5, 1.5, 10.25};

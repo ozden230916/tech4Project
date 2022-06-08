@@ -20,5 +20,6 @@ public class TreeSetPractice {
         names.add("ali");
         System.out.println(names);
 
+
     }
 }

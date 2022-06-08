@@ -1,19 +1,16 @@
 package collections.linkedList;
 
-public class Test {
-    public static int findFactorial(int n){
-        int product = 1;
-        if(n == 0 || n == 1) return 1;
-        else{
-            for(int i = n; i> 0; i--){
-                product *= i;
-            }
-        }
+import javax.swing.text.html.HTMLDocument;
+import java.util.*;
 
-        return product;
-    }
+public class Test {
+  public static int countVowel(String s){
+      String str = s.replaceAll("[^aeiouAEIOU]", "");
+      return str.length();
+  }
 
     public static void main(String[] args) {
-        System.out.println(findFactorial(5));
+        System.out.println(countVowel("I like Java"));
     }
+
 }
